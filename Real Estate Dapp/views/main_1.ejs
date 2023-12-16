@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>  
+<br>
+
+<div id="initID">
+    <div id="loaderID" class="loader"></div>
+    <ul id="initialStatusID"></ul>
+</div>
+
+<div id="main">
+    <div>
+        <div style="background-color:red;">                
+            <h5 class="text-center">Buy and Sell land</h5>
+        </div>
+    </div>
+    <div>
+        <div style="background-color:green;"height:100px;">                
+            <% include partials/components/landlist.ejs %>
+        </div>
+    </div>
+    
+    <div>
+        <div style="background-color:white; height:100px;">
+            <% include partials/components/operations.ejs %>
+        </div>
+        <div class="col-2" style="background-color:blue; height:100px;">
+            <br>
+            <div id="loaderID2" class="loader"></div>
+        </div>        
+    </div>
+    <br><br><br>
+    
+    <div>
+        <div style="background-color:blue; height:150px;">
+            <% include partials/components/status.ejs %>
+           
+        </div>
+    </div>
+
+
+</div>
+
+<% include partials/jsincludes.ejs %>
+
+<script src="/js/arrive.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+<script src="/js/config.js"></script>
+<script src="/js/init.js"></script>
+<script src="/js/loadLands.js"></script>
+<script src="/js/operations.js"></script>
+</body>
+</html>
